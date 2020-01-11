@@ -1,0 +1,81 @@
+
+/*SOMMAIRE
+-------------------------------------------------------
+1. 
+2.
+3.
+4.
+*/
+
+
+/*1.MISE EN PAGE GÉNÉRALE
+----------------------------------------------------*/
+
+/* Couleurs*/
+:root {
+  --background-color-one: #579C87;
+  --text-color-one: #FDCB46;
+}
+
+
+header {
+    background-color: var(--background-color-one);
+    padding-top:2rem;
+    padding-bottom: 2rem;
+    margin-bottom:90px;
+
+}
+
+body {
+    margin:0;
+    max-width: 1366px;
+    margin:auto;
+}
+
+.logo {
+    max-width:420px;
+    margin: auto;
+    margin-top:75px;
+    margin-bottom: 75px;
+    display: flex;
+}
+
+.section_menu {
+    max-width: 1110px;
+    display: flex;
+    margin:auto;
+}
+
+.menu_image {
+    max-width: 490px;
+}
+
+.button_prochainement {
+    width:595px;
+    background-color: var(--background-color-one);
+    font-size:3em;
+    border:none;
+    padding:20px 0 20px 0;
+    margin:auto;
+    color: var(--text-color-one);
+    display: flex;
+    border-radius: 20px;
+    margin-top:75px;
+    margin-bottom:75px;
+}
+
+footer {
+    background-color: var(--background-color-one);
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-color-one);
+    font-size:2em;
+}
+
+.footer_left {
+    margin-left:40px;
+}
+
+.footer_rigth {
+    margin-right:40px;
+}
