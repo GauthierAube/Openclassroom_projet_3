@@ -80,25 +80,33 @@ footer {
     margin-right:40px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .container_menu {
-        max-width: 1110px;
-        margin:auto;
+    max-width: 1110px;
+    margin:auto; 
 }
 
 a {
     color: var(--text-color-one);
     text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    font-size:3em;
+    margin-top:80px;
+    margin-bottom:45px;
+}
+
+.main_menu_image {
+    box-shadow: 0 0 10px #BDBDBD;
+    margin-bottom:120px;
+    max-width: 100%;
+    height: auto;
+}
+
+.section_page_menu {
+    max-width:1090px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
 }
