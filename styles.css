@@ -22,8 +22,6 @@ header {
     background-color: var(--background-color-one);
     padding-top:2rem;
     padding-bottom: 2rem;
-    margin-bottom:90px;
-
 }
 
 body {
@@ -40,14 +38,15 @@ body {
     display: flex;
 }
 
-.section_menu {
-    max-width: 1110px;
+.section_menu_one, .section_menu_two {
     display: flex;
-    margin:auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.menu_image {
-    max-width: 490px;
+.image_menu {
+    margin-top:80px;
+    box-shadow: 0 0 10px #BDBDBD;
 }
 
 .button_prochainement {
@@ -62,6 +61,7 @@ body {
     border-radius: 20px;
     margin-top:75px;
     margin-bottom:75px;
+    display: flex;
 }
 
 footer {
@@ -78,4 +78,27 @@ footer {
 
 .footer_rigth {
     margin-right:40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container_menu {
+        max-width: 1110px;
+        margin:auto;
+}
+
+a {
+    color: var(--text-color-one);
+    text-decoration: none;
 }
