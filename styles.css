@@ -45,11 +45,15 @@ body {
 }
 
 .image_menu {
-    margin-top:80px;
-    box-shadow: 0 0 10px #BDBDBD;
-}
+    transition: transform 400ms;
+    }
 
-.button_prochainement {
+.image_menu:hover {
+        transform: scale(1.2);
+        opacity: 0.5;
+    } 
+
+.prochainement {
     width:60%;
     background-color: var(--bg-color-one);
     font-size:3em;
@@ -60,7 +64,7 @@ body {
     margin:auto;
     margin-top:75px;
     margin-bottom:75px;
-    display: flex;
+    text-align: center;
 }
 
 footer {
@@ -119,4 +123,11 @@ p {
 .signature_mentions {
     margin-top:10px;
     margin-bottom:200px;
+}
+
+.image_size {
+    max-width:490px;
+    box-shadow: 0 0 10px #BDBDBD;
+    margin-top:80px;
+    overflow:hidden;
 }
