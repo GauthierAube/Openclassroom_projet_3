@@ -37,21 +37,21 @@ body {
     display: flex;
 }
 
-section {
+.section_accueil {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
 }
 
-section div {
+.section_accueil div {
     width:490px;
     box-shadow: 0 0 10px #BDBDBD;
     margin-top:80px;
     overflow:hidden;
 }
 
-section a{
+.section_accueil a{
     text-decoration: none;
 }
 
@@ -148,11 +148,11 @@ section a{
     font-size:100px;
     margin-top:0;
 }
-section img{
+.section_accueil div{
     transition: transform 400ms;
 }
 
-section img:hover {
+.section_accueil div:hover{
     transform: scale(1.2);
     opacity: 0.5;
 } 
@@ -170,7 +170,7 @@ section img:hover {
     margin-bottom:75px;
     text-align: center;
 }
-.container_menu {
+.container_accueil {
     max-width: 1110px;
     margin:auto; 
 }
@@ -202,3 +202,38 @@ footer button:nth-child(1) {
 footer button:nth-child(2) {
     margin-right:40px;
 }
+
+/*PAGE MENU LA NOTE ENCHANTÉE*/
+.section_menu_1 div {
+    max-width:900px;
+    background-color:#FCDFDB;
+    margin:auto;
+    padding:50px;
+    box-shadow: 0 0 10px #BDBDBD;
+    margin-bottom:100px;
+}
+.section_menu_1 h2, h3{
+    text-align: center;
+}
+.section_menu_1 h2{
+    font-family:'Satisfy', cursive;
+    font-size:3em;
+}
+.section_menu_1 table{
+    margin:auto;    
+}
+.section_menu_1 th, h3{
+    font-family: 'Kaushan Script', cursive;
+}
+.section_menu_1 th{
+    font-size: 1.3em;
+}
+.section_menu_1 th:first-child{
+    text-align: left;
+}
+.section_menu_1 h3{
+    font-size:2em;
+    margin-top:100px;
+}
+
+
