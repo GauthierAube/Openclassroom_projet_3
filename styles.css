@@ -17,7 +17,6 @@
   --text-color-one: #FDCB46;
 }
 
-
 header {
     background-color: var(--bg-color-one);
     padding-top:2rem;
@@ -38,20 +37,125 @@ body {
     display: flex;
 }
 
-.section_menu_one, .section_menu_two {
+section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    text-align: center;
 }
 
-.image_menu {
-    transition: transform 400ms;
-    }
+section div {
+    width:490px;
+    box-shadow: 0 0 10px #BDBDBD;
+    margin-top:80px;
+    overflow:hidden;
+}
 
-.image_menu:hover {
-        transform: scale(1.2);
-        opacity: 0.5;
-    } 
+section a{
+    text-decoration: none;
+}
+
+/*Menu 1*/
+.menu_1{
+    background-color:#FADFDB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.menu_1 h2{
+    font-size:40px;
+    font-family: 'Satisfy', cursive;
+}
+.menu_1 p{
+    font-family: 'Kaushan Script', cursive;
+    text-transform: uppercase;
+    font-size:60px;
+    margin-top:0;
+}
+.menu_1 a{
+    color:#421B20;
+    padding: 225px 0px; 
+}
+
+/*Menu 2*/
+.menu_2{
+    background-color:#FDF5FE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.menu_2 h2{
+    font-size:40px;
+    font-family: 'Rochester', cursive;
+    background: -webkit-linear-gradient(left, #C77426, #8D57FC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.menu_2 p{
+    font-family: 'Gelasio', serif;
+    font-size:60px;
+    margin-top:0;
+}
+.menu_2 a{
+    color:#C77426;
+    padding: 225px 0px; 
+}
+
+/*Menu 3*/
+.menu_3{
+    background-color:#F9F9F9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.menu_3 h2{
+    font-size:40px;
+    font-family: 'Dancing Script', cursive;
+    background: -webkit-linear-gradient(left, #003FDD, #308BFB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.menu_3 p{
+    font-family: 'Nanum Brush Script', cursive;
+    font-size:100px;
+    margin-top:0;
+}
+.menu_3 a{
+    color: #308BFB;
+    padding: 225px 0px; 
+}
+
+/*Menu 4*/
+.menu_4{
+    background-color:#FCFFFD;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.menu_4 a{
+    color:#72BF56;
+    padding: 225px 0px; 
+}
+.menu_4 h2{
+    font-size:40px;
+    font-family: 'Kaushan Script', cursive;
+    background: -webkit-linear-gradient(left,#459339, #BCF57E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.menu_4 p{
+    font-family: 'Nanum Brush Script', cursive;
+    font-size:100px;
+    margin-top:0;
+}
+section img{
+    transition: transform 400ms;
+}
+
+section img:hover {
+    transform: scale(1.2);
+    opacity: 0.5;
+} 
 
 .prochainement {
     width:60%;
@@ -66,32 +170,9 @@ body {
     margin-bottom:75px;
     text-align: center;
 }
-
-footer {
-    background-color: var(--bg-color-one);
-    display: flex;
-    justify-content: space-between;
-    color: var(--text-color-one);
-    font-size:2em;
-    padding: 40px 0 45px 0;
-}
-
-.footer_left {
-    margin-left:40px;
-}
-
-.footer_rigth {
-    margin-right:40px;
-}
-
 .container_menu {
     max-width: 1110px;
     margin:auto; 
-}
-
-a {
-    color: var(--text-color-one);
-    text-decoration: none;
 }
 
 h1 {
@@ -101,33 +182,23 @@ h1 {
     margin-bottom:45px;
 }
 
-.main_menu_image {
-    box-shadow: 0 0 10px #BDBDBD;
-    margin:0 10px 120px 10px;
-    max-width: 100%;
-    height: auto;
-}
-
-.section_page_menu {
-    max-width:1090px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-p {
-    max-width:500px;
-    margin:auto;
-}
-
 .signature_mentions {
     margin-top:10px;
     margin-bottom:200px;
 }
+footer {
+    background-color: var(--bg-color-one);
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-color-one);
+    font-size:2em;
+    padding: 40px 0 45px 0;
+}
 
-.image_size {
-    max-width:490px;
-    box-shadow: 0 0 10px #BDBDBD;
-    margin-top:80px;
-    overflow:hidden;
+footer button:nth-child(1) {
+    margin-left:40px;
+}
+
+footer button:nth-child(2) {
+    margin-right:40px;
 }
