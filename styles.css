@@ -66,16 +66,16 @@ body {
     opacity: 0.5;
 } 
 
-.section_accueil div:nth-child(1){
+.section_accueil >div:nth-child(1){
     background-color: #FADFDB;
 }
-.section_accueil div:nth-child(2){
+.section_accueil >div:nth-child(2){
     background-color: #FDF5FE;
 }
-.section_accueil div:nth-child(3){
+.section_accueil >div:nth-child(3){
     background-color: #F9F9F9;
 }
-.section_accueil div:nth-child(4){
+.section_accueil >div:nth-child(4){
     background-color: #FCFFFD;
 }
 
