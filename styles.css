@@ -53,8 +53,6 @@ body {
     box-shadow: 0 0 30px #BDBDBD;
     margin-top:80px;
 }
-
-
 .section_accueil a{
     text-decoration: none;
 }
@@ -68,6 +66,18 @@ body {
     opacity: 0.5;
 } 
 
+.section_accueil div:nth-child(1){
+    background-color: #FADFDB;
+}
+.section_accueil div:nth-child(2){
+    background-color: #FDF5FE;
+}
+.section_accueil div:nth-child(3){
+    background-color: #F9F9F9;
+}
+.section_accueil div:nth-child(4){
+    background-color: #FCFFFD;
+}
 
 /*Menu 1*/
 .menu_1{
@@ -93,7 +103,6 @@ body {
 
 /*Menu 2*/
 .menu_2{
-    background-color:#FDF5FE;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -117,7 +126,6 @@ body {
 
 /*Menu 3*/
 .menu_3{
-    background-color:#F9F9F9;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -141,7 +149,6 @@ body {
 
 /*Menu 4*/
 .menu_4{
-    background-color:#FCFFFD;
     display: flex;
     flex-direction: column;
     justify-content: center;
