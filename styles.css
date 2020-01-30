@@ -355,3 +355,44 @@ footer a{
     font-family: 'Nanum Brush Script', cursive;
     font-weight: 400;
 }
+
+/*PAGE MENU LA PALETTE DES GOUTS*/
+.bg_menu_4 div{
+    display: flex;
+    justify-content: space-between;
+}
+.bg_menu_4 {
+    max-width:900px;
+    background-color:#FCDFDB;
+    padding:80px;
+    margin: auto;
+    margin-bottom: 80px;
+    box-shadow: 0 0 30px #BDBDBD;
+    color:#3D131A;
+}
+.section_menu_4 h2, h3{
+    text-align: center;
+}
+.section_menu_4 h2{
+    font-family: 'Kaushan Script', cursive;
+    font-size:4em;
+    margin:0;
+    background: -webkit-linear-gradient(left,#459339, #BCF57E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.section_menu_4 p{
+    font-size: 1.8em;
+    font-family: 'Nanum Brush Script', cursive;
+    margin:10px 0;
+    font-weight: 300;
+}
+.section_menu_4 h3{
+    font-size:2.5em;
+    margin:70px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Nanum Brush Script', cursive;
+    font-weight: 400;
+}
+
