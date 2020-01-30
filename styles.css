@@ -11,61 +11,85 @@
 /*1.MISE EN PAGE GÉNÉRALE
 ----------------------------------------------------*/
 
-/* Couleurs*/
-:root {
-  --bg-color-one: #579C87;
-  --text-color-one: #FDCB46;
-}
-
+/* GÉNÉRAL*/
 header {
-    background-color: var(--bg-color-one);
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    background-color: #579C87;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
-
-body {
-    margin:0;
-    max-width: 1366px;
-    margin:auto;
-    font-family: sans-serif;
-    color:#353535;
-}
-
 .logo {
-    max-width:400px;
+    max-width:300px;
     margin: auto;
     display: flex;
 }
+body {
+    margin:0;
+    font-family: sans-serif;
+    color:#353535;
+}
+body div:nth-child(2){
+    max-width :900px;
+    margin:auto;
+    font-size: 1.1em;
+}
 
+h1 {
+    text-align: center;
+    font-size:2.5em;
+    margin-top:80px;
+    margin-bottom:45px;
+}
+
+.signature_mentions {
+    margin-top:10px;
+    margin-bottom:200px;
+}
+footer {
+    background-color: #579C87;
+    display: flex;
+    justify-content: space-between;
+    font-size:1.3em;
+    padding: 30px 0;
+    font-family:sans-serif;
+}
+
+footer a:nth-child(1) {
+    margin-left:40px;
+}
+
+footer a:nth-child(2) {
+    margin-right:40px;
+}
+footer a{
+    color:#FDCB46;
+}
+
+/*PAGE ACCUEIL*/
 .section_accueil {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
 }
-
 .section_accueil .menu_1, .menu_2, .menu_3, .menu_4 {
-    width:490px;
+    width:400px;
+    height:550px;
 }
-
 .section_accueil .bg_menu_accueil{
     overflow:hidden;
     box-shadow: 0 0 30px #BDBDBD;
     margin-top:80px;
 }
-.section_accueil a{
+a{
     text-decoration: none;
 }
-
 .section_accueil .menu_1, .menu_2, .menu_3, .menu_4 {
     transition: transform 400ms;
 }
-
 .section_accueil .menu_1:hover, .menu_2:hover, .menu_3:hover, .menu_4:hover{
     transform: scale(1.2);
     opacity: 0.5;
 } 
-
 .section_accueil >div:nth-child(1){
     background-color: #FADFDB;
 }
@@ -79,34 +103,42 @@ body {
     background-color: #FCFFFD;
 }
 
-/*Menu 1*/
-.menu_1{
-    background-color:#FADFDB;
+.container >p:last-child {
+    width:50%;
+    background-color: var(--bg-color-one);
+    font-size:1.7em;
+    border:none;
+    padding:20px 0 20px 0;
+    color: var(--text-color-one);
+    border-radius: 20px;
+    margin:auto;
+    margin-top:75px;
+    margin-bottom:75px;
+    text-align: center;
+}
+/*Disposition des menus sur la page d'accueil*/
+.menu_1, .menu_2, .menu_3, .menu_4{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
+/*Menu 1*/
 .menu_1 h2{
-    font-size:40px;
+    font-size:20px;
     font-family: 'Devonshire', cursive;
 }
 .menu_1 p{
     font-family: 'Kaushan Script', cursive;
     text-transform: uppercase;
-    font-size:60px;
+    font-size:50px;
     margin-top:0;
 }
 .menu_1 a{
     color:#421B20;
-    padding: 225px 0px; 
 }
 
 /*Menu 2*/
-.menu_2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 .menu_2 h2{
     font-size:40px;
     font-family: 'Rochester', cursive;
@@ -121,15 +153,9 @@ body {
 }
 .menu_2 a{
     color:#C77426;
-    padding: 225px 0px; 
 }
 
 /*Menu 3*/
-.menu_3{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 .menu_3 h2{
     font-size:40px;
     font-family: 'Dancing Script', cursive;
@@ -144,18 +170,11 @@ body {
 }
 .menu_3 a{
     color: #308BFB;
-    padding: 225px 0px; 
 }
 
 /*Menu 4*/
-.menu_4{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 .menu_4 a{
     color:#72BF56;
-    padding: 225px 0px; 
 }
 .menu_4 h2{
     font-size:40px;
@@ -170,64 +189,18 @@ body {
     margin-top:0;
 }
 
-.prochainement {
-    width:60%;
-    background-color: var(--bg-color-one);
-    font-size:3em;
-    border:none;
-    padding:20px 0 20px 0;
-    color: var(--text-color-one);
-    border-radius: 20px;
-    margin:auto;
-    margin-top:75px;
-    margin-bottom:75px;
-    text-align: center;
-}
-.container_accueil {
-    max-width: 1110px;
-    margin:auto; 
-}
-
-h1 {
-    text-align: center;
-    font-size:3em;
-    margin-top:80px;
-    margin-bottom:45px;
-}
-
-.signature_mentions {
-    margin-top:10px;
-    margin-bottom:200px;
-}
-footer {
-    background-color: var(--bg-color-one);
-    display: flex;
-    justify-content: space-between;
-    color: var(--text-color-one);
-    font-size:2.3em;
-    padding: 30px 0;
-    font-family:sans-serif;
-}
-
-footer .button:nth-child(1) {
-    margin-left:40px;
-}
-
-footer .button:nth-child(2) {
-    margin-right:40px;
-}
-footer a{
-    color: #FDCB46;
-    text-decoration: none;
-}
 
 /*PAGE MENU LA NOTE ENCHANTÉE*/
+.section_menu_1{
+    max-width :750px;
+    margin:auto;
+    margin-bottom:80px;
+}
 .bg_menu_1 div{
     display: flex;
     justify-content: space-between;
 }
 .bg_menu_1 {
-    max-width:900px;
     background-color:#FCDFDB;
     padding:80px;
     margin: auto;
@@ -240,17 +213,15 @@ footer a{
 }
 .section_menu_1 h2{
     font-family: 'Devonshire', cursive;
-    font-size:4em;
+    font-size:3em;
     margin:0;
 }
 .section_menu_1 p{
-    font-size: 1.8em;
     font-family: 'Kalam', cursive;
-    margin:10px 0;
     font-weight: 300;
 }
 .section_menu_1 h3{
-    font-size:2.5em;
+    font-size:2em;
     margin:70px 0 20px 0;
     display: flex;
     justify-content: center;
@@ -265,18 +236,16 @@ footer a{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.title_note_enchante{
+.bg_menu_1 >p:last-child{
     margin:70px 0 0 0;
-}
-.title_note_enchante p{
-    font-size:3em;
     font-family: 'Devonshire', cursive;
+    text-align: center;
 }
 .title_note_enchante i{
-    float:left;
     font-size: 1.3em;
     margin-right:20px;
 }
+
 
 /*PAGE MENU LE CHIC A LA FRANCAISE*/
 .bg_menu_2 div{
