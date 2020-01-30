@@ -44,16 +44,30 @@ body {
     text-align: center;
 }
 
-.section_accueil div {
+.section_accueil .menu_1, .menu_2, .menu_3, .menu_4 {
     width:490px;
+}
+
+.section_accueil .bg_menu_accueil{
+    overflow:hidden;
     box-shadow: 0 0 30px #BDBDBD;
     margin-top:80px;
-    overflow:hidden;
 }
+
 
 .section_accueil a{
     text-decoration: none;
 }
+
+.section_accueil .menu_1, .menu_2, .menu_3, .menu_4 {
+    transition: transform 400ms;
+}
+
+.section_accueil .menu_1:hover, .menu_2:hover, .menu_3:hover, .menu_4:hover{
+    transform: scale(1.2);
+    opacity: 0.5;
+} 
+
 
 /*Menu 1*/
 .menu_1{
@@ -148,14 +162,6 @@ body {
     font-size:100px;
     margin-top:0;
 }
-.section_accueil div{
-    transition: transform 400ms;
-}
-
-.section_accueil div:hover{
-    transform: scale(1.2);
-    opacity: 0.5;
-} 
 
 .prochainement {
     width:60%;
