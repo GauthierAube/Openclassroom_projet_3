@@ -17,7 +17,7 @@ header {
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
-.logo {
+header img {
     max-width:300px;
     margin: auto;
     display: flex;
@@ -51,6 +51,9 @@ footer {
     font-size:1.3em;
     padding: 30px 0;
     font-family:sans-serif;
+    width: 100%;
+    position: sticky;
+    bottom:0; left:0;
 }
 
 footer a:nth-child(1) {
@@ -63,67 +66,68 @@ footer a:nth-child(2) {
 footer a{
     color:#FDCB46;
 }
+a{
+    text-decoration: none;
+}
+
+section img {
+    width: 150px;
+    overflow:auto;
+}
 
 /*PAGE ACCUEIL*/
-.section_accueil {
+.section_accueil_1, 
+.section_accueil_2 {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
 }
-.section_accueil .menu_1, .menu_2, .menu_3, .menu_4 {
+.menu_1, 
+.menu_2, 
+.menu_3, 
+.menu_4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width:400px;
     height:550px;
+    transition: transform 400ms;
 }
+.menu_1:hover, 
+.menu_2:hover, 
+.menu_3:hover, 
+.menu_4:hover{
+    transform: scale(1.2);
+    opacity: 0.5;
+} 
 .section_accueil .bg_menu_accueil{
     overflow:hidden;
     box-shadow: 0 0 30px #BDBDBD;
     margin-top:80px;
 }
-a{
-    text-decoration: none;
-}
-.section_accueil .menu_1, .menu_2, .menu_3, .menu_4 {
-    transition: transform 400ms;
-}
-.section_accueil .menu_1:hover, .menu_2:hover, .menu_3:hover, .menu_4:hover{
-    transform: scale(1.2);
-    opacity: 0.5;
-} 
-.section_accueil >div:nth-child(1){
-    background-color: #FADFDB;
-}
-.section_accueil >div:nth-child(2){
-    background-color: #FDF5FE;
-}
-.section_accueil >div:nth-child(3){
-    background-color: #F9F9F9;
-}
-.section_accueil >div:nth-child(4){
-    background-color: #FCFFFD;
+.bg_menu_accueil p{
+    font-size:100px;
+    margin-top:0;
 }
 
 .container >p:last-child {
     width:50%;
-    background-color: var(--bg-color-one);
+    background-color: #579C87;
     font-size:1.7em;
     border:none;
     padding:20px 0 20px 0;
-    color: var(--text-color-one);
+    color: #FDCB46;
     border-radius: 20px;
     margin:auto;
     margin-top:75px;
     margin-bottom:75px;
     text-align: center;
 }
-/*Disposition des menus sur la page d'accueil*/
-.menu_1, .menu_2, .menu_3, .menu_4{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
 /*Menu 1*/
+.menu_1{
+    background-color: #FADFDB;
+}
 .menu_1 h2{
     font-size:20px;
     font-family: 'Devonshire', cursive;
@@ -132,13 +136,14 @@ a{
     font-family: 'Kaushan Script', cursive;
     text-transform: uppercase;
     font-size:50px;
-    margin-top:0;
 }
 .menu_1 a{
     color:#421B20;
 }
-
 /*Menu 2*/
+.menu_2{
+    background-color: #FDF5FE;
+}
 .menu_2 h2{
     font-size:40px;
     font-family: 'Rochester', cursive;
@@ -149,13 +154,15 @@ a{
 .menu_2 p{
     font-family: 'Gelasio', serif;
     font-size:60px;
-    margin-top:0;
 }
 .menu_2 a{
     color:#C77426;
 }
 
 /*Menu 3*/
+.menu_3{
+    background-color: #F9F9F9;
+}
 .menu_3 h2{
     font-size:40px;
     font-family: 'Dancing Script', cursive;
@@ -165,14 +172,14 @@ a{
 }
 .menu_3 p{
     font-family: 'Nanum Brush Script', cursive;
-    font-size:100px;
-    margin-top:0;
 }
 .menu_3 a{
     color: #308BFB;
 }
-
 /*Menu 4*/
+.menu_4{
+    background-color: #FCFFFD;
+}
 .menu_4 a{
     color:#72BF56;
 }
@@ -185,48 +192,54 @@ a{
 }
 .menu_4 p{
     font-family: 'Nanum Brush Script', cursive;
-    font-size:100px;
-    margin-top:0;
 }
-
-
-/*PAGE MENU LA NOTE ENCHANTÉE*/
+/*PAGE MENU GÉNÉRAL*/
 .section_menu_1{
     max-width :750px;
     margin:auto;
     margin-bottom:80px;
 }
-.bg_menu_1 div{
+.bg_menu div{
     display: flex;
     justify-content: space-between;
+    margin-top:-20px;
+    align-items: baseline;
 }
-.bg_menu_1 {
-    background-color:#FCDFDB;
+.bg_menu{
     padding:80px;
     margin: auto;
     margin-bottom: 80px;
     box-shadow: 0 0 30px #BDBDBD;
+}
+.section_menu h2, h3{
+    text-align: center;
+}
+.section_menu h2{
+    margin:0;
+}
+
+/*PAGE MENU LA NOTE ENCHANTÉE*/
+.bg_menu_1 {
+    background-color:#FCDFDB;
     color:#3D131A;
 }
-.section_menu_1 h2, h3{
-    text-align: center;
 }
 .section_menu_1 h2{
     font-family: 'Devonshire', cursive;
     font-size:3em;
-    margin:0;
 }
 .section_menu_1 p{
     font-family: 'Kalam', cursive;
     font-weight: 300;
 }
 .section_menu_1 h3{
-    font-size:2em;
-    margin:70px 0 20px 0;
+    font-size:1.8em;
+    margin:70px 0px 20px 0px;
     display: flex;
     justify-content: center;
     font-family: 'Kalam', cursive;
     font-weight: 400;
+    white-space: nowrap;
 }
 .fa-music{
     font-size: 5em;
@@ -236,13 +249,18 @@ a{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.bg_menu_1 p:last-child{
+    font-weight: 500;
+}
 .bg_menu_1 >p:last-child{
     margin:70px 0 0 0;
     font-family: 'Devonshire', cursive;
-    text-align: center;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
 }
-.title_note_enchante i{
-    font-size: 1.3em;
+.icon_music_end{
+    font-size: 1.5em;
     margin-right:20px;
 }
 
