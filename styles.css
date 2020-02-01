@@ -70,12 +70,7 @@ a{
     text-decoration: none;
 }
 
-section img {
-    width: 150px;
-    overflow:auto;
-}
-
-/*PAGE ACCUEIL*/
+/*--------------------ACCUEIL--------------------*/
 .section_accueil_1, 
 .section_accueil_2 {
     display: flex;
@@ -124,7 +119,7 @@ section img {
     text-align: center;
 }
 
-/*Menu 1*/
+/*-----Menu 1-----*/
 .menu_1{
     background-color: #FADFDB;
 }
@@ -140,7 +135,8 @@ section img {
 .menu_1 a{
     color:#421B20;
 }
-/*Menu 2*/
+
+/*-----Menu 2-----*/
 .menu_2{
     background-color: #FDF5FE;
 }
@@ -159,7 +155,7 @@ section img {
     color:#C77426;
 }
 
-/*Menu 3*/
+/*-----Menu 3-----*/
 .menu_3{
     background-color: #F9F9F9;
 }
@@ -176,7 +172,8 @@ section img {
 .menu_3 a{
     color: #308BFB;
 }
-/*Menu 4*/
+
+/*-----Menu 4-----*/
 .menu_4{
     background-color: #FCFFFD;
 }
@@ -193,61 +190,62 @@ section img {
 .menu_4 p{
     font-family: 'Nanum Brush Script', cursive;
 }
-/*PAGE MENU GÉNÉRAL*/
-.section_menu_1{
+/*--------------------MENUS - CSS GÉNÉRAL--------------------*/
+.section_menu {
     max-width :750px;
     margin:auto;
     margin-bottom:80px;
 }
+.section_menu h2{
+    font-size:3.5em;
+    margin:0;
+    text-align: center;
+}
+.section_menu h3{
+    font-size:1.3em;
+    font-weight: 400;
+    margin:70px 0px 20px 0px;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    text-align: center;
+}
+.section_menu p{
+    font-weight: 300;
+    margin:10px 0;
+}
 .bg_menu div{
     display: flex;
     justify-content: space-between;
-    margin-top:-20px;
     align-items: baseline;
 }
 .bg_menu{
-    padding:80px;
+    padding:80px 20px;
     margin: auto;
     margin-bottom: 80px;
     box-shadow: 0 0 30px #BDBDBD;
 }
-.section_menu h2, h3{
-    text-align: center;
+section img {
+    width: 250px;
+    overflow:auto;
 }
-.section_menu h2{
-    margin:0;
+.menu_text, .part_1, .part_2{
+    margin:0 40px;
 }
 
-/*PAGE MENU LA NOTE ENCHANTÉE*/
-.bg_menu_1 {
-    background-color:#FCDFDB;
-    color:#3D131A;
-}
-}
+/*--------------------MENU 1 - LA NOTE ENCHANTÉE--------------------*/
 .section_menu_1 h2{
     font-family: 'Devonshire', cursive;
-    font-size:3em;
+}
+.section_menu_1 h3{
+    font-family: 'Kalam', cursive;
 }
 .section_menu_1 p{
     font-family: 'Kalam', cursive;
-    font-weight: 300;
 }
-.section_menu_1 h3{
-    font-size:1.8em;
-    margin:70px 0px 20px 0px;
-    display: flex;
-    justify-content: center;
-    font-family: 'Kalam', cursive;
-    font-weight: 400;
-    white-space: nowrap;
-}
-.fa-music{
-    font-size: 5em;
-    display: flex;
-    justify-content: center;
-    background: -webkit-linear-gradient(#f6916a,#f04d5f);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.bg_menu_1 {
+    background-color:#FCDFDB;
+    color:#3D131A;
 }
 .bg_menu_1 p:last-child{
     font-weight: 500;
@@ -259,140 +257,97 @@ section img {
     display: flex;
     justify-content: center;
 }
+.menu_1_dessert{
+  flex-direction: column;
+}
+.fa-music{
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+    background: -webkit-linear-gradient(#f6916a,#f04d5f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .icon_music_end{
     font-size: 1.5em;
     margin-right:20px;
 }
 
-
-/*PAGE MENU LE CHIC A LA FRANCAISE*/
-.bg_menu_2 div{
-    display: flex;
-    justify-content: space-between;
-}
-.bg_menu_2 {
-    max-width:900px;
-    background-color:#FFF5FE;
-    padding:80px;
-    margin: auto;
-    margin-bottom: 80px;
-    box-shadow: 0 0 30px #BDBDBD;
-    color:#3D131A;
-}
-.section_menu_2 h2, h3{
-    text-align: center;
-}
-
-.section_menu_2 h2{
+/*--------------------MENU 2 - LE CHIC A LA FRANCAISE--------------------*/
+.bg_menu_2 h2{
     font-family: 'Rochester', cursive;
     background: -webkit-linear-gradient(left, #C77426, #8D57FC);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;    
-    font-size:4em;
-    margin:0;
-    margin-bottom:100px;
 }
-.section_menu_2 p{
-    font-size: 1.8em;
+.bg_menu_2 {
+    background-color:#FFF5FE;
+    color:#3D131A;
     font-family: 'Gelasio', serif;
-    margin:10px 0;
-    font-weight: 300;
 }
-.section_menu_2 h3{
-    font-size:2.5em;
-    margin:70px 0 20px 0;
-    display: flex;
-    justify-content: center;
-    font-family: 'Gelasio', serif;
-    font-weight: 400;
+.bg_menu_2 div:last-child{
+    flex-direction: column;
+    color:#6E4CCC;
+    margin-top:20px;
 }
-.bg_menu_2 .part_1{
+.part_1{
     color:#C67412;
 }
-.bg_menu_2 .part_2{
+.part_2{
     color:#A56799;
 }
-.bg_menu_2 .part_3{
+.part_3_title{
+    margin-top:80px;
     color:#6E4CCC;
 }
 
-/*PAGE MENU LE DELICE DES PAPILLES*/
-.bg_menu_3 div{
-    display: flex;
-    justify-content: space-between;
-}
-.bg_menu_3 {
-    max-width:900px;
-    background-color:#FCDFDB;
-    padding:80px;
-    margin: auto;
-    margin-bottom: 80px;
-    box-shadow: 0 0 30px #BDBDBD;
-    color:#3D131A;
-}
-.section_menu_3 h2, h3{
-    text-align: center;
-}
+
+/*--------------------MENU 3 - LE DELICE DES PAPILLES--------------------*/
 .section_menu_3 h2{
     font-family: 'Dancing Script', cursive;
-    font-size:4em;
-    margin:0;
     background: -webkit-linear-gradient(left, #003FDD, #308BFB);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.section_menu_3 p{
-    font-size: 1.8em;
-    font-family: 'Nanum Brush Script', cursive;
-    margin:10px 0;
-    font-weight: 300;
-}
 .section_menu_3 h3{
-    font-size:2.5em;
-    margin:70px 0 20px 0;
-    display: flex;
-    justify-content: center;
     font-family: 'Nanum Brush Script', cursive;
-    font-weight: 400;
+    font-size: 1.7em;
 }
-
-/*PAGE MENU LA PALETTE DES GOUTS*/
-.bg_menu_4 div{
-    display: flex;
-    justify-content: space-between;
+.section_menu_3 p{
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 1.5em;
+    margin-top:-10px;
 }
-.bg_menu_4 {
-    max-width:900px;
-    background-color:#FCDFDB;
-    padding:80px;
-    margin: auto;
-    margin-bottom: 80px;
-    box-shadow: 0 0 30px #BDBDBD;
+.bg_menu_3 {
+    background-color:#EDEFEF;
     color:#3D131A;
 }
-.section_menu_4 h2, h3{
-    text-align: center;
+.section_menu_3 p:last-child{
+    font-size: 1.6em;
 }
+
+/*--------------------MENU 4 - LA PALETTE DES GOUTS--------------------*/
 .section_menu_4 h2{
     font-family: 'Kaushan Script', cursive;
-    font-size:4em;
-    margin:0;
-    background: -webkit-linear-gradient(left,#459339, #BCF57E);
+    background: -webkit-linear-gradient(left,#459339, #BEFF7F);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.section_menu_4 p{
-    font-size: 1.8em;
-    font-family: 'Nanum Brush Script', cursive;
-    margin:10px 0;
-    font-weight: 300;
-}
 .section_menu_4 h3{
-    font-size:2.5em;
-    margin:70px 0 20px 0;
-    display: flex;
-    justify-content: center;
     font-family: 'Nanum Brush Script', cursive;
-    font-weight: 400;
+    font-size: 1.7em;
 }
+.section_menu_4 p{
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 1.5em;
+    margin-top:-10px;
+}
+.bg_menu_4 {
+    background-color:#FDFFFD;
+    color:#3D131A;
+}
+.section_menu_4 p:last-child{
+    font-size: 1.6em;
+}
+
 
