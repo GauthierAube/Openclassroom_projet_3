@@ -46,14 +46,16 @@ h1 {
 }
 footer {
     background-color: #579C87;
-    display: flex;
-    justify-content: space-between;
     font-size:1.3em;
-    padding: 30px 0;
-    font-family:sans-serif;
-    width: 100%;
     position: sticky;
     bottom:0; left:0;
+}
+footer div:first-child{
+    max-width:900px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    margin: auto;
 }
 
 footer a:nth-child(1) {
@@ -71,16 +73,13 @@ a{
 }
 
 /*--------------------ACCUEIL--------------------*/
-.section_accueil_1, 
-.section_accueil_2 {
+.section_accueil_1, .section_accueil_2 {
     display: flex;
     justify-content: space-around;
     text-align: center;
+    flex-flow: wrap;
 }
-.menu_1, 
-.menu_2, 
-.menu_3, 
-.menu_4 {
+.menu_1, .menu_2, .menu_3, .menu_4 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,10 +87,14 @@ a{
     height:550px;
     transition: transform 400ms;
 }
-.menu_1:hover, 
-.menu_2:hover, 
-.menu_3:hover, 
-.menu_4:hover{
+.bg_menu_accueil h2{
+    font-size:2.3em;
+}
+.bg_menu_accueil p{
+    font-size:2.8em;
+    margin-top:0;
+}
+.menu_1:hover, .menu_2:hover, .menu_3:hover, .menu_4:hover{
     transform: scale(1.2);
     opacity: 0.5;
 } 
@@ -100,12 +103,7 @@ a{
     box-shadow: 0 0 30px #BDBDBD;
     margin-top:80px;
 }
-.bg_menu_accueil p{
-    font-size:100px;
-    margin-top:0;
-}
-
-.container >p:last-child {
+.prochainement{
     width:50%;
     background-color: #579C87;
     font-size:1.7em;
@@ -115,8 +113,15 @@ a{
     border-radius: 20px;
     margin:auto;
     margin-top:75px;
-    margin-bottom:75px;
     text-align: center;
+}
+.container >p:last-child{
+    display: flex;
+    margin:auto;
+}
+.fa-circle{
+    margin-bottom: 75px;
+    margin-top: 50px;
 }
 
 /*-----Menu 1-----*/
@@ -124,13 +129,11 @@ a{
     background-color: #FADFDB;
 }
 .menu_1 h2{
-    font-size:20px;
     font-family: 'Devonshire', cursive;
 }
 .menu_1 p{
     font-family: 'Kaushan Script', cursive;
     text-transform: uppercase;
-    font-size:50px;
 }
 .menu_1 a{
     color:#421B20;
@@ -141,7 +144,6 @@ a{
     background-color: #FDF5FE;
 }
 .menu_2 h2{
-    font-size:40px;
     font-family: 'Rochester', cursive;
     background: -webkit-linear-gradient(left, #C77426, #8D57FC);
     -webkit-background-clip: text;
@@ -149,7 +151,6 @@ a{
 }
 .menu_2 p{
     font-family: 'Gelasio', serif;
-    font-size:60px;
 }
 .menu_2 a{
     color:#C77426;
@@ -160,14 +161,13 @@ a{
     background-color: #F9F9F9;
 }
 .menu_3 h2{
-    font-size:40px;
     font-family: 'Dancing Script', cursive;
     background: -webkit-linear-gradient(left, #003FDD, #308BFB);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .menu_3 p{
-    font-family: 'Nanum Brush Script', cursive;
+    font-family: 'Kalam', cursive;
 }
 .menu_3 a{
     color: #308BFB;
@@ -181,14 +181,13 @@ a{
     color:#72BF56;
 }
 .menu_4 h2{
-    font-size:40px;
     font-family: 'Kaushan Script', cursive;
     background: -webkit-linear-gradient(left,#459339, #BCF57E);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .menu_4 p{
-    font-family: 'Nanum Brush Script', cursive;
+    font-family: 'Kalam', cursive;
 }
 /*--------------------MENUS - CSS GÉNÉRAL--------------------*/
 .section_menu {
@@ -213,6 +212,7 @@ a{
 .section_menu p{
     font-weight: 300;
     margin:10px 0;
+    font-size: 1.1em;
 }
 .bg_menu div{
     display: flex;
@@ -288,7 +288,6 @@ section img {
 .bg_menu_2 div:last-child{
     flex-direction: column;
     color:#6E4CCC;
-    margin-top:20px;
 }
 .part_1{
     color:#C67412;
@@ -309,13 +308,12 @@ section img {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.section_menu_3 h3{
-    font-family: 'Nanum Brush Script', cursive;
+.section_menu_3 h3 {
+    font-family: 'Kalam', cursive;
     font-size: 1.7em;
 }
-.section_menu_3 p{
-    font-family: 'Nanum Brush Script', cursive;
-    font-size: 1.5em;
+.section_menu_3 p {
+    font-family: 'Kalam', cursive;
     margin-top:-10px;
 }
 .bg_menu_3 {
@@ -323,23 +321,22 @@ section img {
     color:#3D131A;
 }
 .section_menu_3 p:last-child{
-    font-size: 1.6em;
+    font-size: 1.4em;
 }
 
 /*--------------------MENU 4 - LA PALETTE DES GOUTS--------------------*/
-.section_menu_4 h2{
+.section_menu_4 h2 {
     font-family: 'Kaushan Script', cursive;
     background: -webkit-linear-gradient(left,#459339, #BEFF7F);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.section_menu_4 h3{
-    font-family: 'Nanum Brush Script', cursive;
+.section_menu_4 h3 {
+    font-family: 'Kalam', cursive;
     font-size: 1.7em;
 }
-.section_menu_4 p{
-    font-family: 'Nanum Brush Script', cursive;
-    font-size: 1.5em;
+.section_menu_4 p {
+    font-family: 'Kalam', cursive;
     margin-top:-10px;
 }
 .bg_menu_4 {
@@ -347,7 +344,92 @@ section img {
     color:#3D131A;
 }
 .section_menu_4 p:last-child{
-    font-size: 1.6em;
+    font-size: 1.4em;
 }
+
+/*--------------------RESPONSIVE DESIGN--------------------*/
+@media (max-width: 425px) { 
+/*----ACCUEIL----*/
+    .menu_1, .menu_2, .menu_3, .menu_4 {
+        width: 300px;
+        height:450px;
+    }
+    .section_accueil .bg_menu_accueil{
+        margin-top: 40px;
+    }
+    header img {
+        max-width: 60%;
+    }
+    .menu_1 p {
+        font-size: 2em;
+    }
+    .menu_2 p, .menu_3 p, .menu_4 p {
+        font-size: 3em;
+    }
+    footer div:first-child {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    footer a:nth-child(1) {
+        margin-left: 0px;
+        margin-top:10px;
+    }
+    footer a:nth-child(2) {
+        margin-right: 0px;
+    }
+    .menu_1 h2, .menu_2 h2, .menu_3 h2, .menu_4 h2{
+        padding:0 20px;
+    }
+    .container >p:last-child {
+        width: 70%;
+        font-size: 1.3em;
+        margin-top: 55px;
+        margin-bottom: 55px;
+    }
+    .section_accueil a {
+        padding: 100px 0;
+    }
+    .section_menu h2{
+        font-size:3.5em;
+    }
+/*----PAGE DES MENUS----*/
+    .bg_menu {
+        padding: 50px 10px;
+    }
+    body div:nth-child(2) {
+        font-size: 0.9em;
+    }
+    h1 {
+        display: none;
+    }
+    .section_menu {
+        width: 100%;
+        margin:0;
+    }
+    .bg_menu h3:first-child {
+        margin-bottom:20px;
+    }
+    .bg_menu h3:nth-child(2) {
+        margin-bottom:20px;
+    }
+    .bg_menu img{
+        display:none;
+    }
+    .menu_text, .part_1, .part_2{
+        margin:0 15px;
+    }
+    .bg_menu_3 .menu_text, .bg_menu_4 .menu_text{
+        font-size:0.7em;
+    }
+    .section_menu h3 {
+        margin: auto;
+        margin-top:40px;
+    }
+    .bg_menu{
+        padding:20px 0;
+        margin: 0;
+        box-shadow: none;
+        }    
+    }
 
 
