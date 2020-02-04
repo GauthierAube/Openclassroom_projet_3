@@ -116,13 +116,42 @@ a{
     text-align: center;
 }
 .container >p:last-child{
-    display: flex;
-    margin:auto;
+    text-align: center;
 }
 .fa-circle{
     margin-bottom: 75px;
     margin-top: 50px;
+    color:#FDCB46;
+    font-size: 0.5em;
+    margin-right:5px;
 }
+.circle_1{
+    animation: load_animation 1.2s ease-in-out infinite; 
+}
+.circle_2{
+    animation: load_animation 1.2s 0.2s ease-in-out infinite;
+}
+.circle_3{
+    animation: load_animation 1.2s 0.4s ease-in-out infinite;
+}
+
+@keyframes load_animation {
+    0%{
+        opacity: 1; 
+        transform: scale(1) translateY(0px);
+    }
+    50%{
+        opacity: 0.6;
+        transform: scale(1.6) translateY(-5px);
+        color:#579C87;
+
+    }
+    100%{
+        opacity: 1; 
+        transform: scale(1) translateY(0px);
+    }
+}
+
 
 /*-----Menu 1-----*/
 .menu_1{
@@ -195,12 +224,12 @@ a{
     margin:auto;
     margin-bottom:80px;
 }
-.section_menu h2{
+.bg_menu h2{
     font-size:3.5em;
     margin:0;
     text-align: center;
 }
-.section_menu h3{
+.bg_menu h3{
     font-size:1.3em;
     font-weight: 400;
     margin:70px 0px 20px 0px;
@@ -209,7 +238,10 @@ a{
     white-space: nowrap;
     text-align: center;
 }
-.section_menu p{
+.bg_menu h3:hover{
+    background-size: 100% 100%;
+    }
+.bg_menu p{
     font-weight: 300;
     margin:10px 0;
     font-size: 1.1em;
@@ -234,18 +266,18 @@ section img {
 }
 
 /*--------------------MENU 1 - LA NOTE ENCHANTÉE--------------------*/
-.section_menu_1 h2{
+.bg_menu_1 h2{
     font-family: 'Devonshire', cursive;
 }
-.section_menu_1 h3{
-    font-family: 'Kalam', cursive;
-}
-.section_menu_1 p{
-    font-family: 'Kalam', cursive;
+.bg_menu_1 h3{
+    background: linear-gradient(to top, rgb(62, 19, 25) 10%, transparent 10.01%) no-repeat left bottom;
+    background-size:0 100%; 
+    transition: background-size .3s;
 }
 .bg_menu_1 {
     background-color:#FCDFDB;
     color:#3D131A;
+    font-family: 'Kalam', cursive;
 }
 .bg_menu_1 p:last-child{
     font-weight: 500;
@@ -273,77 +305,105 @@ section img {
     margin-right:20px;
 }
 
-/*--------------------MENU 2 - LE CHIC A LA FRANCAISE--------------------*/
+/*------------------MENU 2 - LE CHIC A LA FRANCAISE------------------*/
 .bg_menu_2 h2{
     font-family: 'Rochester', cursive;
-    background: -webkit-linear-gradient(left, #C77426, #8D57FC);
+    background: -webkit-linear-gradient(left, rgb(199, 116, 38), rgb(141, 87, 252));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;    
 }
+.part_1_title{
+    background: linear-gradient(to top, rgb(199, 116, 38) 10%, transparent 10.01%) no-repeat left bottom;
+}
+.part_2_title{
+    background: linear-gradient(to top,rgb(165, 103, 153) 10%, transparent 10.01%) no-repeat left bottom;
+}
+.part_3_title{
+    background: linear-gradient(to top,rgb(110, 76, 204) 10%, transparent 10.01%) no-repeat left bottom;
+}
+.part_1_title, .part_2_title, .part_3_title{
+    background-size:0 100%; 
+    transition: background-size .3s;
+}
 .bg_menu_2 {
     background-color:#FFF5FE;
-    color:#3D131A;
     font-family: 'Gelasio', serif;
 }
 .bg_menu_2 div:last-child{
     flex-direction: column;
-    color:#6E4CCC;
+    color:rgb(110, 76, 204);
 }
 .part_1{
-    color:#C67412;
+    color:rgb(198, 116, 18);
 }
 .part_2{
-    color:#A56799;
+    color:rgb(165, 103, 153);
 }
 .part_3_title{
     margin-top:80px;
-    color:#6E4CCC;
+    color:rgb(110, 76, 204);
 }
 
 
 /*--------------------MENU 3 - LE DELICE DES PAPILLES--------------------*/
-.section_menu_3 h2{
+.bg_menu_3 h2{
     font-family: 'Dancing Script', cursive;
     background: -webkit-linear-gradient(left, #003FDD, #308BFB);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.section_menu_3 h3 {
-    font-family: 'Kalam', cursive;
-    font-size: 1.7em;
+.bg_menu_3 h3 {
+    font-size: 1.5em;
+    margin-right:10px;
+    margin-left:10px;
 }
-.section_menu_3 p {
-    font-family: 'Kalam', cursive;
+.menu_3_title_1{ 
+    background: linear-gradient(to top, rgb(3, 40, 221) 10%, transparent 10.01%) no-repeat left bottom;
+    background-size:0 100%; 
+    transition: background-size .3s;
+}
+.menu_3_title_2{ 
+    background: linear-gradient(to top, rgb(9, 110, 241) 10%, transparent 10.01%) no-repeat left bottom;
+    background-size:0 100%; 
+    transition: background-size .3s;
+}
+.menu_3_title_3{ 
+    background: linear-gradient(to top, rgb(35, 156, 248) 10%, transparent 10.01%) no-repeat left bottom;
+    background-size:0 100%; 
+    transition: background-size .3s;
+}
+.bg_menu_3 p {
     margin-top:-10px;
 }
 .bg_menu_3 {
-    background-color:#EDEFEF;
-    color:#3D131A;
+    background-color:rgb(236, 238, 238);
+    font-family: 'Kalam', cursive;
 }
-.section_menu_3 p:last-child{
+.bg_menu_3 p:last-child{
     font-size: 1.4em;
 }
 
 /*--------------------MENU 4 - LA PALETTE DES GOUTS--------------------*/
-.section_menu_4 h2 {
+.bg_menu_4 h2 {
     font-family: 'Kaushan Script', cursive;
-    background: -webkit-linear-gradient(left,#459339, #BEFF7F);
+    background: -webkit-linear-gradient(left,rgb(37, 136, 21), rgb(190, 255, 127));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.section_menu_4 h3 {
-    font-family: 'Kalam', cursive;
-    font-size: 1.7em;
+.bg_menu_4 h3 {
+    font-size: 1.5em;
+    background: linear-gradient(to top, rgb(37, 136, 21) 10%, transparent 10.01%) no-repeat left bottom;
+    background-size:0 100%; 
+    transition: background-size .3s;
 }
-.section_menu_4 p {
-    font-family: 'Kalam', cursive;
+.bg_menu_4 p {
     margin-top:-10px;
 }
 .bg_menu_4 {
     background-color:#FDFFFD;
-    color:#3D131A;
+    font-family: 'Kalam', cursive;
 }
-.section_menu_4 p:last-child{
+.bg_menu_4 p:last-child{
     font-size: 1.4em;
 }
 
@@ -380,7 +440,7 @@ section img {
     .menu_1 h2, .menu_2 h2, .menu_3 h2, .menu_4 h2{
         padding:0 20px;
     }
-    .container >p:last-child {
+    .prochainement{
         width: 70%;
         font-size: 1.3em;
         margin-top: 55px;
@@ -389,7 +449,7 @@ section img {
     .section_accueil a {
         padding: 100px 0;
     }
-    .section_menu h2{
+    .bg_menu h2{
         font-size:3.5em;
     }
 /*----PAGE DES MENUS----*/
@@ -421,7 +481,7 @@ section img {
     .bg_menu_3 .menu_text, .bg_menu_4 .menu_text{
         font-size:0.7em;
     }
-    .section_menu h3 {
+    .bg_menu h3 {
         margin: auto;
         margin-top:40px;
     }
