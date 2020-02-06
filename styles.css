@@ -65,12 +65,32 @@ footer a:nth-child(1) {
 footer a:nth-child(2) {
     margin-right:40px;
 }
-footer a{
-    color:#FDCB46;
-}
 a{
     text-decoration: none;
 }
+footer a{
+    color:#FDCB46;
+    animation: wiggle 0.82s cubic-bezier(.36,.07,.19,.97) infinite;
+    transform: translate(0, 0, 0);
+}
+  
+  @keyframes wiggle {
+    10%, 90% {
+      transform: translateX(-1px);
+    }
+    
+    20%, 80% {
+      transform: translateX(2px);
+    }
+  
+    30%, 50%, 70% {
+      transform: translateX(-4px);
+    }
+  
+    40%, 60% {
+      transform: translateX(4px);
+    }
+  }
 
 /*--------------------ACCUEIL--------------------*/
 .section_accueil_1, .section_accueil_2 {
@@ -407,6 +427,15 @@ section img {
     font-size: 1.4em;
 }
 
+/*--------------------MENTIONS LÉGALES--------------------*/
+
+.section_mentions{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+}
+
+
 /*--------------------RESPONSIVE DESIGN--------------------*/
 @media (max-width: 425px) { 
 /*----ACCUEIL----*/
@@ -491,5 +520,4 @@ section img {
         box-shadow: none;
         }    
     }
-
 
