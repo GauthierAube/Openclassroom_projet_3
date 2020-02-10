@@ -27,7 +27,7 @@ body {
     font-family: sans-serif;
     color:#353535;
 }
-body div:nth-child(2){
+main{
     max-width :900px;
     margin:auto;
     font-size: 1.1em;
@@ -71,7 +71,7 @@ a{
 footer a{
     color:#FDCB46;
     animation: wiggle 0.82s cubic-bezier(.36,.07,.19,.97) infinite;
-    transform: translate(0, 0, 0);
+    transform: translateX(0);
 }
   
   @keyframes wiggle {
@@ -98,6 +98,7 @@ footer a{
     justify-content: space-around;
     text-align: center;
     flex-flow: wrap;
+    margin:auto;
 }
 .menu_1, .menu_2, .menu_3, .menu_4 {
     display: flex;
@@ -135,9 +136,6 @@ footer a{
     margin-top:75px;
     text-align: center;
 }
-.container >p:last-child{
-    text-align: center;
-}
 .fa-circle{
     margin-bottom: 75px;
     margin-top: 50px;
@@ -164,7 +162,6 @@ footer a{
         opacity: 0.6;
         transform: scale(1.6) translateY(-5px);
         color:#579C87;
-
     }
     100%{
         opacity: 1; 
