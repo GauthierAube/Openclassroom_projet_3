@@ -236,7 +236,7 @@ footer a{
     font-family: 'Kalam', cursive;
 }
 /*--------------------MENUS - CSS GÉNÉRAL--------------------*/
-.section_menu {
+.main_menu {
     max-width :750px;
     margin:auto;
     margin-bottom:80px;
@@ -349,7 +349,7 @@ main img {
     background-color:#FFF5FE;
     font-family: 'Gelasio', serif;
 }
-.bg_menu_2 div:last-child{
+.bg_menu_2 section:last-child .menu_text{
     flex-direction: column;
     color:rgb(110, 76, 204);
 }
@@ -479,21 +479,29 @@ main img {
         padding: 100px 0;
     }
     .bg_menu h2{
-        font-size:3.5em;
+        font-size:2.8em;
     }
 /*----PAGE DES MENUS----*/
     .bg_menu {
         padding: 50px 10px;
+        padding:20px 0;
+        margin: 0;
+        box-shadow: none;
     }
-    body div:nth-child(2) {
+    .bg_menu p{
+        text-align: left;
         font-size: 0.9em;
     }
     h1 {
         display: none;
     }
-    .section_menu {
+    .main_menu {
         width: 100%;
         margin:0;
+    }
+    .bg_menu h3 {
+        margin: auto;
+        margin-top:40px;
     }
     .bg_menu h3:first-child {
         margin-bottom:20px;
@@ -501,23 +509,20 @@ main img {
     .bg_menu h3:nth-child(2) {
         margin-bottom:20px;
     }
+    .bg_menu_3 p:last-child, .bg_menu_4 p:last-child {
+        font-size: 0.8em;
+    }
+    .bg_menu_3 p, .bg_menu_4 p {
+        font-size: 0.8em;
+    }
     .bg_menu img{
         display:none;
     }
     .menu_text, .part_1, .part_2{
         margin:0 15px;
     }
-    .bg_menu_3 .menu_text, .bg_menu_4 .menu_text{
-        font-size:0.7em;
+    .bg_menu_4 h3 {
+        font-size: 20px;
     }
-    .bg_menu h3 {
-        margin: auto;
-        margin-top:40px;
-    }
-    .bg_menu{
-        padding:20px 0;
-        margin: 0;
-        box-shadow: none;
-        }    
-    }
+}
 
