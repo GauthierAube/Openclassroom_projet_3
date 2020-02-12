@@ -287,7 +287,7 @@ main img {
     font-family: 'Devonshire', cursive;
 }
 .bg_menu_1 h3{
-    background: linear-gradient(to top, rgb(62, 19, 25) 10%, transparent 10.01%) no-repeat left bottom;
+    background: linear-gradient(to top, rgb(62, 19, 25) 10%, transparent 10.01%) no-repeat;
     background-size:0 100%; 
     transition: background-size .3s;
 }
@@ -333,13 +333,13 @@ main img {
     -webkit-text-fill-color: transparent;    
 }
 .part_1_title{
-    background: linear-gradient(to top, rgb(199, 116, 38) 10%, transparent 10.01%) no-repeat left bottom;
+    background: linear-gradient(to top, rgb(199, 116, 38) 10%, transparent 10.01%) no-repeat;
 }
 .part_2_title{
-    background: linear-gradient(to top,rgb(165, 103, 153) 10%, transparent 10.01%) no-repeat left bottom;
+    background: linear-gradient(to top,rgb(165, 103, 153) 10%, transparent 10.01%) no-repeat;
 }
 .part_3_title{
-    background: linear-gradient(to top,rgb(110, 76, 204) 10%, transparent 10.01%) no-repeat left bottom;
+    background: linear-gradient(to top,rgb(110, 76, 204) 10%, transparent 10.01%) no-repeat;
 }
 .part_1_title, .part_2_title, .part_3_title{
     background-size:0 100%; 
@@ -378,17 +378,17 @@ main img {
     margin-left:10px;
 }
 .menu_3_title_1{ 
-    background: linear-gradient(to top, rgb(3, 40, 221) 10%, transparent 10.01%) no-repeat left bottom;
+    background: linear-gradient(to top, rgb(3, 40, 221) 10%, transparent 10.01%) no-repeat;
     background-size:0 100%; 
     transition: background-size .3s;
 }
 .menu_3_title_2{ 
-    background: linear-gradient(to top, rgb(9, 110, 241) 10%, transparent 10.01%) no-repeat left bottom;
+    background: linear-gradient(to top, rgb(9, 110, 241) 10%, transparent 10.01%) no-repeat;
     background-size:0 100%; 
     transition: background-size .3s;
 }
 .menu_3_title_3{ 
-    background: linear-gradient(to top, rgb(35, 156, 248) 10%, transparent 10.01%) no-repeat left bottom;
+    background: linear-gradient(to top, rgb(35, 156, 248) 10%, transparent 10.01%) no-repeat;
     background-size:0 100%; 
     transition: background-size .3s;
 }
@@ -412,7 +412,7 @@ main img {
 }
 .bg_menu_4 h3 {
     font-size: 1.5em;
-    background: linear-gradient(to top, rgb(37, 136, 21) 10%, transparent 10.01%) no-repeat left bottom;
+    background: linear-gradient(to top, rgb(37, 136, 21) 10%, transparent 10.01%) no-repeat;
     background-size:0 100%; 
     transition: background-size .3s;
 }
